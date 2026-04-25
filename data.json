@@ -1,0 +1,32 @@
+[
+  {
+    "src": "assets/koleksi/foto1.jpg",
+    "full": "assets/koleksi/foto1_highres.jpg",
+    "category": "landscape",
+    "caption": "Mountain at Golden Hour"
+  },
+  {
+    "src": "assets/koleksi/foto2.jpg",
+    "full": "assets/koleksi/foto2_highres.jpg",
+    "category": "urban",
+    "caption": "City Lights"
+  },
+  {
+    "src": "assets/koleksi/foto3.jpg",
+    "full": "assets/koleksi/foto3_highres.jpg",
+    "category": "daily",
+    "caption": "Morning Ritual"
+  },
+  {
+    "src": "assets/koleksi/foto4.jpg",
+    "full": "assets/koleksi/foto4_highres.jpg",
+    "category": "coding",
+    "caption": "Late Night Session"
+  },
+  {
+    "src": "assets/koleksi/foto5.jpg",
+    "full": "assets/koleksi/foto5_highres.jpg",
+    "category": "nature",
+    "caption": "Sunset Hour"
+  }
+]

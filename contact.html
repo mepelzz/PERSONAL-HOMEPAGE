@@ -1,31 +1,77 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Justin Aldefa Lengkong Wenur</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Justin Aldefa</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <nav class="creepy-nav">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html" class="active">Contact</a></li>
-        </ul>
-    </nav>
+  <div class="cursor"></div><div class="cursor-ring"></div>
+  <div class="stars"></div>
+  <div class="jp-grid" aria-hidden="true"></div>
+  <div class="moon-scene" aria-hidden="true"><div class="moon-disk"><div class="moon-mare"></div><div class="moon-mare"></div><div class="moon-mare"></div><div class="moon-crater"></div><div class="moon-crater"></div><div class="moon-crater"></div><div class="moon-crater"></div><div class="moon-crater"></div><div class="moon-crater"></div><div class="moon-crater"></div><div class="moon-halo"></div></div></div>
 
-    <div class="container">
-        <h2 style="color: #8b0000;">Summon Me (Contact)</h2>
-        <p class="subtitle">Reach out into the dark...</p>
-        
-        <form style="margin-top: 30px; display: flex; flex-direction: column; align-items: center;">
-            <input type="text" placeholder="Your Name" style="margin-bottom: 10px; padding: 10px; width: 250px; background: #111; border: 1px solid #333; color: #fff; font-family: inherit;">
-            <input type="email" placeholder="Your Email" style="margin-bottom: 10px; padding: 10px; width: 250px; background: #111; border: 1px solid #333; color: #fff; font-family: inherit;">
-            <textarea placeholder="Your Message" rows="4" style="margin-bottom: 10px; padding: 10px; width: 250px; background: #111; border: 1px solid #333; color: #fff; font-family: inherit;"></textarea>
-            <button type="button" style="padding: 10px 20px; background: #8b0000; border: 1px solid #4a0000; color: #fff; cursor: pointer; font-family: 'Courier New', Courier, monospace; letter-spacing: 1px;">Send Message</button>
-        </form>
+  <header class="navbar">
+    <div class="navbar-cat-wrap">
+      <canvas id="navbar-cat-canvas" width="90" height="28" aria-hidden="true"></canvas>
+      <a href="index.html" class="logo">Lenn<span>.</span></a>
     </div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a><a href="gallery.html">Gallery</a>
+      <a href="blog.html">Blog</a><a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1 class="fade-up">Contact <span>Me</span></h1>
+        <p class="fade-up fd1">Ada pertanyaan, masukan, atau ingin berkolaborasi? Saya terbuka untuk diskusi.</p>
+      </div>
+    </section>
+    <section class="contact-section" style="position:relative;z-index:1;">
+      <div class="container">
+        <div class="contact-grid">
+          <aside class="fade-up">
+            <h2>Info Kontak</h2>
+            <ul class="contact-list">
+              <li class="contact-item"><span class="contact-icon">👤</span><div><span class="contact-label">nama</span><span class="contact-value">Justin Aldefa Lengkong Wenur</span></div></li>
+              <li class="contact-item"><span class="contact-icon">📧</span><div><span class="contact-label">email</span><span class="contact-value"><a href="mailto:email.kamu@gmail.com"><span class="__cf_email__" data-cfemail="563c2325223f383a3338313d393831666216313b373f3a7835393b">justinlengkong04@gmail.com</span></a></span></div></li>
+              <li class="contact-item"><span class="contact-icon">📱</span><div><span class="contact-label">whatsapp</span><span class="contact-value"><a href="https://wa.me/6289507328918" target="_blank" rel="noopener">+62 895-0732-8918</a></span></div></li>
+              <li class="contact-item"><span class="contact-icon">📍</span><div><span class="contact-label">lokasi</span><span class="contact-value">Indonesia</span></div></li>
+              <li class="contact-item"><span class="contact-icon">🐙</span><div><span class="contact-label">github</span><span class="contact-value"><a href="https://github.com/mepelzz" target="_blank" rel="noopener">github.com/mepelzz</a></span></div></li>
+            </ul>
+            <div class="contact-avail"><span class="avail-dot"></span>available for projects &amp; collaboration</div>
+          </aside>
+          <div class="contact-form-wrap fade-up fd2">
+            <h2>Kirim Pesan</h2>
+            <form class="contact-form" novalidate>
+              <div class="form-group"><label class="form-label" for="name">nama_lengkap <span class="req">*</span></label><input class="form-input" type="text" id="name" name="name" placeholder="Masukkan nama kamu..." required/></div>
+              <div class="form-group"><label class="form-label" for="email">alamat_email <span class="req">*</span></label><input class="form-input" type="email" id="email" name="email" placeholder="contoh@email.com" required/></div>
+              <div class="form-group"><label class="form-label" for="subject">subjek</label><input class="form-input" type="text" id="subject" name="subject" placeholder="Topik pesan kamu"/></div>
+              <div class="form-group"><label class="form-label" for="message">pesan <span class="req">*</span></label><textarea class="form-textarea" id="message" name="message" rows="6" placeholder="Tulis pesanmu di sini..." required></textarea></div>
+              <button type="submit" class="btn-submit">Kirim Pesan</button>
+              <div class="form-success">🐾 Pesan terkirim! Saya akan segera membalas.</div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">&copy; 2026 Justin Aldefa Lengkong Wenur &mdash; Dibangun dengan HTML, CSS &amp; JS murni</footer>
+
+
+  <script src="script.js"></script>
+  
+
+<div class="modal-overlay" id="success-modal">
+  <div class="modal-content">
+    <div class="modal-icon">🌕✨</div>
+    <h3>Pesan Terkirim!</h3>
+    <p>Terima kasih. Pesanmu telah melintasi ruang dan waktu, saya akan segera membalasnya.</p>
+    <button class="btn-submit" id="close-modal" style="margin-top: 10px;">Tutup</button>
+  </div>
+</div>
 </body>
 </html>

@@ -1,35 +1,103 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery - Justin Aldefa Lengkong Wenur</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery — Justin Aldefa</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <nav class="creepy-nav">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="gallery.html" class="active">Gallery</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+  <div class="cursor"></div><div class="cursor-ring"></div>
+  <div class="stars"></div>
+  <div class="jp-grid" aria-hidden="true"></div>
+  <div class="moon-scene" aria-hidden="true"><div class="moon-disk"><div class="moon-mare"></div><div class="moon-mare"></div><div class="moon-mare"></div><div class="moon-crater"></div><div class="moon-crater"></div><div class="moon-crater"></div><div class="moon-crater"></div><div class="moon-crater"></div><div class="moon-crater"></div><div class="moon-crater"></div><div class="moon-halo"></div></div></div>
 
-    <div class="container">
-        <h2 style="color: #8b0000;">My Artifacts (Gallery)</h2>
-        <p class="subtitle">Evidence of my existence and creations...</p>
-        
-        <div class="gallery-grid" style="margin-top: 30px; text-align: left;">
-            <div class="project-item">
-                <h3 style="color: #ccc;">1. Hand Gesture Recognition System</h3>
-                <p style="color: #777;">Python, OpenCV, MediaPipe</p>
-            </div>
-            <div class="project-item" style="margin-top: 20px;">
-                <h3 style="color: #ccc;">2. Desktop Inventory Management</h3>
-                <p style="color: #777;">Java, SQLYog</p>
-            </div>
-        </div>
+  <header class="navbar">
+    <div class="navbar-cat-wrap">
+      <canvas id="navbar-cat-canvas" width="90" height="28" aria-hidden="true"></canvas>
+      <a href="index.html" class="logo">Lenn<span>.</span></a>
     </div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a><a href="gallery.html" class="active">Gallery</a>
+      <a href="blog.html">Blog</a><a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1 class="fade-up">Gallery <span>Proyek</span></h1>
+        <p class="fade-up fd1">Dokumentasi proyek yang telah saya bangun — dari aplikasi desktop inventori hingga sistem gesture lock berbasis AI.</p>
+      </div>
+    </section>
+
+    <section class="gallery-section" style="position:relative;z-index:1;">
+      <div class="container">
+
+        <article class="project-block fade-up">
+          <div class="project-number"><span class="project-num-label">PROJECT 01</span><div class="project-num-line"></div></div>
+          <div class="project-grid">
+            <div class="project-img-wrap"><img src="assets/inventori/dashboard.png" alt="Dashboard DataBoost" loading="lazy"/></div>
+            <div class="project-info">
+              <div class="project-icon-row"><div class="project-icon">📦</div><div><p class="project-type">Desktop Application</p><h2 class="project-name">DataBoost Inventori</h2></div></div>
+              <p class="project-desc">Aplikasi desktop berbasis Java untuk manajemen inventori barang secara lengkap. Dibangun dengan arsitektur MVC dan terhubung ke database MySQL, mendukung multi-role pengguna (Admin &amp; Staf).</p>
+              <div class="tech-stack"><span class="tech-badge">Java</span><span class="tech-badge">JavaFX / Swing</span><span class="tech-badge">MySQL</span><span class="tech-badge">MVC</span></div>
+              <p class="features-label">Fitur Utama</p>
+              <div class="feature-list">
+                <div class="feature-item"><span class="feature-bullet">▹</span><span class="feature-text">Dashboard monitoring stok dengan grafik real-time dan notifikasi stok kritis</span></div>
+                <div class="feature-item"><span class="feature-bullet">▹</span><span class="feature-text">Modul transaksi penjualan dengan kalkulasi otomatis dan riwayat history</span></div>
+                <div class="feature-item"><span class="feature-bullet">▹</span><span class="feature-text">CRUD data inventori lengkap dengan filter kategori dan pencarian barang</span></div>
+                <div class="feature-item"><span class="feature-bullet">▹</span><span class="feature-text">Manajemen pengguna multi-role dengan autentikasi login yang aman</span></div>
+                <div class="feature-item"><span class="feature-bullet">▹</span><span class="feature-text">Laporan PDF otomatis untuk stok, penjualan, dan pembelian</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="thumb-grid">
+            <figure class="thumb-card"><img src="assets/inventori/dashboard.png" alt="Dashboard" loading="lazy"/><figcaption class="thumb-caption"><span class="thumb-tag">inventori</span><span class="thumb-label">Dashboard</span></figcaption></figure>
+            <figure class="thumb-card"><img src="assets/inventori/barang.png" alt="Data Barang" loading="lazy"/><figcaption class="thumb-caption"><span class="thumb-tag">inventori</span><span class="thumb-label">Data Barang</span></figcaption></figure>
+            <figure class="thumb-card"><img src="assets/inventori/transaksi.png" alt="Transaksi" loading="lazy"/><figcaption class="thumb-caption"><span class="thumb-tag">inventori</span><span class="thumb-label">Transaksi</span></figcaption></figure>
+            <figure class="thumb-card"><img src="assets/inventori/laporan.png" alt="Laporan" loading="lazy"/><figcaption class="thumb-caption"><span class="thumb-tag">inventori</span><span class="thumb-label">Laporan</span></figcaption></figure>
+            <figure class="thumb-card"><img src="assets/inventori/login.png" alt="Login" loading="lazy"/><figcaption class="thumb-caption"><span class="thumb-tag">inventori</span><span class="thumb-label">Login</span></figcaption></figure>
+          </div>
+        </article>
+
+        <article class="project-block fade-up fd1">
+          <div class="project-number"><span class="project-num-label" style="color:var(--accent-soft);background:rgba(192,132,252,0.07);border-color:rgba(192,132,252,0.16);">PROJECT 02</span><div class="project-num-line"></div></div>
+          <div class="project-grid">
+            <div class="project-img-wrap"><img src="assets/gesture/realtime.png" alt="Gesture Lock" loading="lazy"/></div>
+            <div class="project-info">
+              <div class="project-icon-row"><div class="project-icon" style="background:rgba(192,132,252,0.09);border-color:rgba(192,132,252,0.22);">✊</div><div><p class="project-type">AI / Computer Vision</p><h2 class="project-name">Gesture Lock System</h2></div></div>
+              <p class="project-desc">Sistem keamanan berbasis gestur tangan menggunakan Rock Paper Scissors sebagai "password" visual. Model KNN dilatih dengan hand landmark MediaPipe, akurasi <strong>100%</strong> pada data uji.</p>
+              <div class="tech-stack"><span class="tech-badge tech-badge--pink">Python</span><span class="tech-badge tech-badge--pink">MediaPipe</span><span class="tech-badge tech-badge--pink">OpenCV</span><span class="tech-badge tech-badge--pink">Scikit-learn</span><span class="tech-badge tech-badge--pink">KNN</span></div>
+              <p class="features-label" style="border-color:rgba(192,132,252,0.1);">Fitur Utama</p>
+              <div class="feature-list">
+                <div class="feature-item"><span class="feature-bullet" style="color:var(--accent-soft);">▹</span><span class="feature-text">Deteksi 21 hand landmark secara real-time menggunakan MediaPipe</span></div>
+                <div class="feature-item"><span class="feature-bullet" style="color:var(--accent-soft);">▹</span><span class="feature-text">Klasifikasi 3 gesture (Batu, Gunting, Kertas) dengan model KNN</span></div>
+                <div class="feature-item"><span class="feature-bullet" style="color:var(--accent-soft);">▹</span><span class="feature-text">Sistem lock/unlock berdasarkan urutan kombinasi gestur sebagai password</span></div>
+                <div class="feature-item"><span class="feature-bullet" style="color:var(--accent-soft);">▹</span><span class="feature-text">Akurasi model 100% pada data uji (Confusion Matrix KNN)</span></div>
+                <div class="feature-item"><span class="feature-bullet" style="color:var(--accent-soft);">▹</span><span class="feature-text">Mendeteksi gesture UNKNOWN untuk input yang tidak dikenali</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="thumb-grid">
+            <figure class="thumb-card"><img src="assets/gesture/realtime.png" alt="Kamera" loading="lazy"/><figcaption class="thumb-caption"><span class="thumb-tag" style="color:var(--accent-soft);">gesture</span><span class="thumb-label">Kamera</span></figcaption></figure>
+            <figure class="thumb-card"><img src="assets/gesture/gunting.png" alt="Gunting" loading="lazy"/><figcaption class="thumb-caption"><span class="thumb-tag" style="color:var(--accent-soft);">gesture</span><span class="thumb-label">✌️ Gunting</span></figcaption></figure>
+            <figure class="thumb-card"><img src="assets/gesture/kertas.png" alt="Kertas" loading="lazy"/><figcaption class="thumb-caption"><span class="thumb-tag" style="color:var(--accent-soft);">gesture</span><span class="thumb-label">✋ Kertas</span></figcaption></figure>
+            <figure class="thumb-card"><img src="assets/gesture/hasil_training.png" alt="Confusion Matrix" loading="lazy"/><figcaption class="thumb-caption"><span class="thumb-tag" style="color:var(--accent-soft);">gesture</span><span class="thumb-label">Confusion Matrix</span></figcaption></figure>
+            <figure class="thumb-card"><img src="assets/gesture/akurasi.png" alt="Akurasi 100%" loading="lazy"/><figcaption class="thumb-caption"><span class="thumb-tag" style="color:var(--accent-soft);">gesture</span><span class="thumb-label">Akurasi 100% 🎯</span></figcaption></figure>
+          </div>
+        </article>
+
+      </div>
+    </section>
+    <section class="upcoming-section container">
+  <div class="coming-soon-card fade-up">
+    <h2 class="coming-soon-text">Coming Soon...</h2>
+  </div>
+</section>
+
+
+  <footer class="footer">&copy; 2026 Justin Aldefa Lengkong Wenur &mdash; Dibangun dengan HTML, CSS &amp; JS murni</footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

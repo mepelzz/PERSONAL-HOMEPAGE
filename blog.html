@@ -1,24 +1,153 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog - Justin Aldefa Lengkong Wenur</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog — Justin Aldefa</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <nav class="creepy-nav">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="blog.html" class="active">Blog</a></li> <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+  <div class="cursor"></div><div class="cursor-ring"></div>
+  <div class="stars"></div>
+  <div class="jp-grid" aria-hidden="true"></div>
+  <div class="moon-scene" aria-hidden="true"><div class="moon-disk"><div class="moon-mare"></div><div class="moon-mare"></div><div class="moon-mare"></div><div class="moon-crater"></div><div class="moon-crater"></div><div class="moon-crater"></div><div class="moon-crater"></div><div class="moon-crater"></div><div class="moon-crater"></div><div class="moon-crater"></div><div class="moon-halo"></div></div></div>
 
-    <div class="container">
-        <h2 style="color: #8b0000;">My Dark Thoughts (Blog)</h2>
-        <p class="subtitle">Catatan perjalanan dan log project...</p>
+  <header class="navbar">
+    <div class="navbar-cat-wrap">
+      <canvas id="navbar-cat-canvas" width="90" height="28" aria-hidden="true"></canvas>
+      <a href="index.html" class="logo">Lenn<span>.</a>
     </div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a><a href="gallery.html">Gallery</a>
+      <a href="blog.html" class="active">Blog</a><a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1 class="fade-up">Film <span>&amp; Anime</span></h1>
+        <p class="fade-up fd1">Ulasan, esai, dan refleksi tentang sinema dan animasi — dua medium yang paling jujur dalam bercerita.</p>
+      </div>
+    </section>
+
+    <section class="blog-section" style="position:relative;z-index:1;">
+      <div class="container">
+
+        <p class="blog-intro fade-up">
+          <em>"Setiap film adalah jendela. Setiap anime adalah dunia."</em><br><br>
+          Di sini saya menulis tentang karya yang berkesan — bukan sebagai kritikus, tapi sebagai penonton yang benar-benar merasakannya.
+        </p>
+
+        <!-- Filter tabs -->
+        <div class="blog-filters fade-up fd1">
+          <button class="blog-filter active" data-filter="all">Semua</button>
+          <button class="blog-filter" data-filter="film">Film</button>
+          <button class="blog-filter" data-filter="anime">Anime</button>
+          <button class="blog-filter" data-filter="essay">Esai</button>
+          <button class="blog-filter" data-filter="list">Daftar</button>
+        </div>
+
+        <div class="blog-grid">
+
+          <!-- FEATURED: Your Name review -->
+          <article class="blog-card featured fade-up fd1" data-category="anime">
+            <div class="blog-img-wrap">
+              <img src="assets/kiminonawah.jpeg" alt="Your Name" loading="lazy"/>
+                <span class="blog-img-tag"><span class="tag tag--anime">anime</span></span>
+                <span class="blog-score">9.2 / 10</span>
+            </div>
+            <div class="blog-body">
+              <div class="blog-meta">
+                <time datetime="2024-12-10">10 Des 2024</time>
+                <span>review</span>
+                <span>12 min read</span>
+              </div>
+              <h2 class="blog-title"><a href="artikel1.html">Kimi no Na wa (Your Name) — Ketika Waktu dan Rindu Bertemu di Antara Bintang</a></h2>
+              <p class="blog-excerpt">Makoto Shinkai berhasil membuat sesuatu yang hampir mustahil: sebuah film yang terasa seperti mimpi indah yang kamu tahu tidak akan pernah benar-benar kamu alami, tapi kamu tetap ingin merasakannya lagi dan lagi.</p>
+              <a href="artikel1.html" class="blog-read-more">baca ulasan lengkap →</a>
+            </div>
+          </article>
+
+          <!-- Spirited Away -->
+          <article class="blog-card fade-up fd2" data-category="anime">
+            <div class="blog-img-wrap">
+              <img src="assets/spiritedaway.jpeg" alt="Spirited Away" loading="lazy"/>
+              <span class="blog-img-tag"><span class="tag tag--anime">anime</span></span>
+              <span class="blog-score">9.5 / 10</span>
+            </div>
+            <div class="blog-body">
+              <div class="blog-meta"><time datetime="2024-11-22">22 Nov 2024</time><span>review</span><span>10 min read</span></div>
+              <h2 class="blog-title"><a href="artikel2.html">Spirited Away — Sebuah Dunia yang Terlalu Indah untuk Dijelaskan</a></h2>
+              <p class="blog-excerpt">Miyazaki membangun dunia yang tidak perlu kamu pahami sepenuhnya untuk dicintai. Cukup rasakan, dan biarkan membawamu hanyut.</p>
+              <a href="artikel2.html" class="blog-read-more">baca ulasan lengkap →</a>
+            </div>
+          </article>
+
+          <!-- Interstellar -->
+          <article class="blog-card fade-up fd3" data-category="film">
+            <div class="blog-img-wrap">
+              <img src="assets/interstellar.jpeg" alt="Interstellar" loading="lazy"/>
+              <span class="blog-img-tag"><span class="tag tag--film">film</span></span>
+              <span class="blog-score">9.0 / 10</span>
+            </div>
+            <div class="blog-body">
+              <div class="blog-meta"><time datetime="2024-11-05">05 Nov 2024</time><span>review</span><span>11 min read</span></div>
+              <h2 class="blog-title"><a href="artikel3.html">Interstellar — Cinta sebagai Konstanta di Alam Semesta yang Tak Terbatas</a></h2>
+              <p class="blog-excerpt">Nolan membuktikan bahwa sci-fi terbaik bukan tentang teknologi — tapi tentang apa yang membuat kita tetap manusia ketika segalanya runtuh.</p>
+              <a href="artikel3.html" class="blog-read-more">baca ulasan lengkap →</a>
+            </div>
+          </article>
+
+          <!-- Mushishi essay -->
+          <article class="blog-card fade-up fd4" data-category="essay">
+            <div class="blog-img-wrap">
+              <img src="assets/mushishi.jpeg" alt="Mushishi" loading="lazy"/>
+              <span class="blog-img-tag"><span class="tag tag--essay">esai</span></span>
+            </div>
+            <div class="blog-body">
+              <div class="blog-meta"><time datetime="2024-10-18">18 Okt 2024</time><span>esai</span><span>8 min read</span></div>
+              <h2 class="blog-title"><a href="artikel4.html">Mushishi dan Filosofi Diam — Saat Alam Berbicara Lebih Keras dari Manusia</a></h2>
+              <p class="blog-excerpt">Mushishi bukan anime yang ditonton untuk plot. Ia adalah meditasi — sebuah undangan untuk melambat di dunia yang tidak bisa berhenti bergerak.</p>
+              <a href="artikel4.html" class="blog-read-more">baca esai →</a>
+            </div>
+          </article>
+
+          <!-- Top 10 Anime list -->
+          <article class="blog-card fade-up fd5" data-category="list">
+            <div class="blog-img-wrap">
+              <img src="assets/animek.jpeg" alt="Anime list" loading="lazy"/>
+              <span class="blog-img-tag"><span class="tag tag--list">daftar</span></span>
+            </div>
+            <div class="blog-body">
+              <div class="blog-meta"><time datetime="2024-09-30">30 Sep 2024</time><span>daftar</span><span>6 min read</span></div>
+              <h2 class="blog-title"><a href="artikel5.html">10 Anime yang Mengubah Cara Saya Melihat Dunia</a></h2>
+              <p class="blog-excerpt">Bukan sekadar rekomendasi. Ini adalah daftar anime yang meninggalkan bekas — yang saya bawa pulang jauh setelah episode terakhir selesai.</p>
+              <a href="artikel5.html" class="blog-read-more">baca daftar →</a>
+            </div>
+          </article>
+
+          <!-- Violet Evergarden -->
+          <article class="blog-card fade-up fd6" data-category="anime">
+            <div class="blog-img-wrap">
+              <img src="assets/violetevergarden.jpeg" alt="Violet Evergarden" loading="lazy"/>
+              <span class="blog-img-tag"><span class="tag tag--anime">anime</span></span>
+              <span class="blog-score">9.4 / 10</span>
+            </div>
+            <div class="blog-body">
+              <div class="blog-meta"><time datetime="2024-09-10">10 Sep 2024</time><span>review</span><span>9 min read</span></div>
+              <h2 class="blog-title"><a href="artikel6.html">Violet Evergarden — Belajar Merasakan di Dunia yang Menuntut Ketegasan</a></h2>
+              <p class="blog-excerpt">Seorang mantan serdadu yang mencoba memahami makna "aku mencintaimu." Kyoto Animation mengemas trauma dan pertumbuhan dalam visual yang melampaui kata-kata.</p>
+              <a href="artikel6.html" class="blog-read-more">baca ulasan lengkap →</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">&copy; 2026 Justin Aldefa Lengkong Wenur &mdash; Dibangun dengan HTML, CSS &amp; JS murni</footer>
+ 
+  <script src="script.js"></script>
 </body>
 </html>
